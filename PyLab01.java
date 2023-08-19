@@ -15,9 +15,13 @@ public class Principal{
         }while(vida < 3 && !fl );
         if (fl == true){
             System.out.println("Adivinastes!!!!!");
+            // Mi primera modificacion....
             System.out.println("Eres un genio!!!!");}
         else 
             System.out.println("ups, perdiste...");
+            // Segunda modificacion
             System.out.println("Puedes intentar de nuevo ....");
+
+            // Tercera modificacion son los comentarios.
     }
 }
