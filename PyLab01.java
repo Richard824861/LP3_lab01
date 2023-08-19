@@ -18,5 +18,6 @@ public class Principal{
             System.out.println("Eres un genio!!!!");}
         else 
             System.out.println("ups, perdiste...");
+            System.out.println("Puedes intentar de nuevo ....");
     }
 }
