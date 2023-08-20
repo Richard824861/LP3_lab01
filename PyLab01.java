@@ -6,6 +6,7 @@ public class Principal{
         boolean fl = false;
         vida = 0;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Si logra adivinar el numero secreto, recibira un premio");
         do{
             vida ++;
             System.out.println("Vida: "+ vida +"\t¿Cual es el numero secreto? ");
@@ -15,13 +16,20 @@ public class Principal{
         }while(vida < 3 && !fl );
         if (fl == true){
             System.out.println("Adivinastes!!!!!");
-            // Mi primera modificacion....
-            System.out.println("Eres un genio!!!!");}
+            System.out.println("Tu premio es: "+ Regalo.elegir(vida));
+        }    
         else 
             System.out.println("ups, perdiste...");
-            // Segunda modificacion
-            System.out.println("Puedes intentar de nuevo ....");
-
-            // Tercera modificacion son los comentarios.
+    }
+}
+public class Regalo{
+    public static String elegir (int vida){
+        String gift = "";
+        switch (vida){
+            case 1: gift = "Un pasaje al caribe"; break;
+            case 2: gift = "Una visita al museo mas cercano a tu casa"; break;
+            case 3: gift = "Una entrada al cine"; break;
+        }
+        return gift;
     }
 }
